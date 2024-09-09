@@ -52,6 +52,16 @@ class MainActivity : ComponentActivity() {
                         ) {
                             Text(text = "Send silent Notification")
                         }
+                        Spacer(modifier = Modifier.padding(16.dp))
+                        Button(
+                            onClick = {
+                                urgentNotification(
+                                    context = this@MainActivity
+                                )
+                            }
+                        ) {
+                            Text(text = "Send urgent Notification")
+                        }
                     }
                 }
             }
